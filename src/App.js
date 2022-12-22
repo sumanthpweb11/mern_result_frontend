@@ -21,6 +21,7 @@ import EditEmployee from "./pages/employees/EditEmployee";
 import PublicRoute from "./components/PublicRoute";
 import AddResult from "./pages/employees/AddResult";
 import EditResult from "./pages/employees/EditResult";
+import ResultCheck from "./pages/ResultCheck";
 function App() {
   const { loading } = useSelector((state) => state.alert);
 
@@ -31,7 +32,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/result/:resultId" element={<ResultCheck />} /> */}
+          <Route path="/result/:resultId" element={<ResultCheck />} />
           <Route
             path="/login"
             element={

@@ -3,6 +3,7 @@ import { Row, Col } from "antd";
 import { useNavigate } from "react-router-dom";
 import { CgUserList, CgProfile } from "react-icons/cg";
 import { FaChalkboardTeacher } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 function EmployeeHome() {
   const navigate = useNavigate();
